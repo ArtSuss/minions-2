@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body class="text-primary">
+    <header class="font-roboto">
+        <div class="py-16 container gap-x-16 mx-auto flex justify-between">
+            <div class="flex gap-x-2 items-center">
+                <img src="/img/logo.svg" alt="logo">
+                <span class="font-bold text-4xl">Organick</span>
+            </div>
+            <nav class="flex items-center">
+                <ul class="flex gap-5 text-xl font-bold">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">Pages</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex gap-4 flex-grow">
+                <div class="relative flex flex-grow">
+                    <input
+                        class="w-full bg-zinc-50 pr-20 pl-8 text-lg border-0 ring-green outline-none focus:ring focus:outline-none rounded-full"
+                        type="text">
+                        <button class="absolute bg-green rounded-full h-14 w-14 inline-flex text-white items-center justify-center right-1 top-1/2 -translate-y-1/2">
+                   LP</button>
+                </div>
+                <div class="flex p-1 pr-4 gap-3 items-center border rounded-full">
+                    <img class="inline-flex" src="/img/cart.svg" alt="cart">
+                    <span class="font-semibold">Cart(0)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="bg-hero-img min-h-[56rem] bg-[#E3F1E9] py-[15.5rem]">
+            <div class="container px-64 flex justify-start">
+                <div class="font-roboto w-[33rem]">
+                    <p class="font-yellowtail text-4xl text-hero-green">100% Natural Food</p>
+                    <h1 class="font-bold text-7xl mt-2 mb-6">Choose the best
+                        healthier way<br>
+                        of life</h1>
+                    <div
+                        class="flex justify-center items-center gap-3 bg-buton max-w-[13.75rem] min-h-[5rem] rounded-2xl">
+                        <p class="font-bold">Explore Now</p>
+                        <img src="/img/aerrow.svg" alt="aerrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
