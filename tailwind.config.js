@@ -22,6 +22,10 @@ module.exports = {
         'offer-img': "url('/img/offer.png')",
         'grapefruites-img': "url('/img/grapefruites.png')",
         'cinnamon-img': "url('/img/cinnamon-bg.png')",
+        'jucie-img': "url('/img/juice.png')",
+        'food-img': "url('/img/food.png')",
+        'cookies': "url('/img/cookis.png')"
+        
       }
     },
   },
