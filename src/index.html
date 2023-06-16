@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
 
-  <body class="text-primary">
-    <header class="font-roboto">
+  <body class="font-roboto text-primary">
+    <header>
       <div class="container mx-auto flex justify-between gap-x-16 py-16">
         <div class="flex items-center gap-x-2">
           <img src="/img/logo.svg" alt="logo" />
@@ -63,7 +63,7 @@
     <main>
       <section class="min-h-[56rem] bg-[#f1eff0] bg-hero-img py-[15.5rem]">
         <div class="container flex justify-start px-64">
-          <div class="w-[33rem] font-roboto">
+          <div class="w-[33rem]">
             <p class="font-yellowtail text-4xl text-hero-green">
               100% Natural Food
             </p>
@@ -79,16 +79,17 @@
           </div>
         </div>
       </section>
-      <section class="pb-48 pt-40 font-roboto">
-        <div class="flex justify-center gap-6">
+
+      <section class="pb-48 pt-40">
+        <div class="container flex gap-6">
           <div
             class="flex min-h-[22.9rem] min-w-[42.5rem] items-center rounded-3xl bg-[#F96893] bg-natural-img pl-8"
           >
             <div class="w-[17.4rem] text-white">
               <span class="font-yellowtail text-4xl">Natural!!</span>
-              <h2 class="mt-2 text-4xl font-extrabold">
+              <p class="mt-2 text-4xl font-extrabold">
                 Get Garden Fresh Fruits
-              </h2>
+              </p>
             </div>
           </div>
           <div
@@ -103,12 +104,15 @@
           </div>
         </div>
       </section>
-      <section class="bg-gray-50 pb-28 pl-24 pt-20">
-        <div class="flex items-center justify-center">
-          <div class="w-1/2">
-            <img src="/img/grapefruites.png" alt="grapefruites" />
-          </div>
-          <div class="w-1/2 font-roboto">
+
+      <section class="relative bg-gray-50 pb-28 pl-24 pt-20">
+        <img
+          src="/img/grapefruites.png"
+          alt="grapefruites"
+          class="absolute right-1/2 top-0"
+        />
+        <div class="container flex min-h-[867px] items-center justify-end">
+          <div>
             <div class="w-[44rem]">
               <span class="font-yellowtail text-4xl text-green">About us</span>
               <h3 class="mb-4 mt-2 text-5xl font-extrabold">
@@ -155,163 +159,172 @@
           </div>
         </div>
       </section>
-      <section class="pb-52 font-roboto">
-        <div class="pt-44 text-center">
-          <span class="font-yellowtail text-4xl text-green">Categories</span>
-          <h4 class="mt-2 text-5xl font-extrabold">Our Products</h4>
-        </div>
-        <div
-          class="mt-10 grid grid-cols-4 grid-rows-2 justify-items-center gap-5"
-        >
-          <div class="bg-gray-50 px-8 pb-5 pt-8">
-            <button
-              class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
-            >
-              Vegetable
-            </button>
-            <img src="/img/broccoli.png" alt="broccoli" />
-            <p class="mb-3 font-semibold">Calabrese Broccoli</p>
-            <hr />
-            <div class="mt-2 flex items-center justify-between">
-              <div>
-                <span class="mr-2 text-gray-400 line-through">$20.00</span>
-                <span class="text-lg font-semibold">$13.00</span>
-              </div>
-              <img src="/img/star.svg" alt="stars" />
-            </div>
+
+      <section class="pb-52">
+        <div class="container">
+          <div class="pt-44 text-center">
+            <span class="font-yellowtail text-4xl text-green">Categories</span>
+            <h4 class="mt-2 text-5xl font-extrabold">Our Products</h4>
           </div>
-          <div class="bg-gray-50 px-8 pb-5 pt-8">
-            <button
-              class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
-            >
-              Fresh
-            </button>
-            <img src="/img/banana.png" alt="big bananas" />
-            <p class="mb-3 font-semibold">Fresh Banana Fruites</p>
-            <hr />
-            <div class="mt-2 flex items-center justify-between">
-              <div>
-                <span class="mr-2 text-gray-400 line-through">$20.00</span>
-                <span class="text-lg font-semibold">$14.00</span>
-              </div>
-              <img src="/img/star.svg" alt="stars" />
-            </div>
-          </div>
-          <div class="bg-gray-50 px-8 pb-5 pt-8">
-            <button
-              class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
-            >
-              Millets
-            </button>
-            <img src="/img/millets.png" alt="white nuts" />
-            <p class="mb-3 font-semibold">White Nuts</p>
-            <hr />
-            <div class="mt-2 flex items-center justify-between">
-              <div>
-                <span class="mr-2 text-gray-400 line-through">$20.00</span>
-                <span class="text-lg font-semibold">$15.00</span>
-              </div>
-              <img src="/img/star.svg" alt="stars" />
-            </div>
-          </div>
-          <div class="bg-gray-50 px-8 pb-5 pt-8">
-            <button
-              class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
-            >
-              Vegetable
-            </button>
-            <img src="/img/tomato.png" alt="tomato" />
-            <p class="mb-3 font-semibold">Vegan Red Tomato</p>
-            <hr />
-            <div class="mt-2 flex items-center justify-between">
-              <div>
-                <span class="mr-2 text-gray-400 line-through">$20.00</span>
-                <span class="text-lg font-semibold">$17.00</span>
-              </div>
-              <img src="/img/star.svg" alt="stars" />
-            </div>
-          </div>
-          <div class="bg-gray-50 px-8 pb-5 pt-8">
-            <button
-              class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
-            >
-              Health
-            </button>
-            <img src="/img/mung.png" alt="mung bean" />
-            <p class="mb-3 font-semibold">Mung Bean</p>
-            <hr />
-            <div class="mt-2 flex items-center justify-between">
-              <div>
-                <span class="mr-2 text-gray-400 line-through">$20.00</span>
-                <span class="text-lg font-semibold">$11.00</span>
-              </div>
-              <img src="/img/star.svg" alt="stars" />
-            </div>
-          </div>
-          <div class="bg-gray-50 px-8 pb-5 pt-8">
-            <button
-              class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
-            >
-              Nuts
-            </button>
-            <img src="/img/nuts.png" alt="nuts" />
-            <p class="mb-3 font-semibold">Brown Hazelnut</p>
-            <hr />
-            <div class="mt-2 flex items-center justify-between">
-              <div>
-                <span class="mr-2 text-gray-400 line-through">$20.00</span>
-                <span class="text-lg font-semibold">$12.00</span>
-              </div>
-              <img src="/img/star.svg" alt="stars" />
-            </div>
-          </div>
-          <div class="bg-gray-50 px-8 pb-5 pt-8">
-            <button
-              class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
-            >
-              Fresh
-            </button>
-            <img src="/img/eggs.png" alt="eggs" />
-            <p class="mb-3 font-semibold">Eggs</p>
-            <hr />
-            <div class="mt-2 flex items-center justify-between">
-              <div>
-                <span class="mr-2 text-gray-400 line-through">$20.00</span>
-                <span class="text-lg font-semibold">$17.00</span>
-              </div>
-              <img src="/img/star.svg" alt="stars" />
-            </div>
-          </div>
-          <div class="bg-gray-50 px-8 pb-5 pt-8">
-            <button
-              class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
-            >
-              Fresh
-            </button>
-            <img src="/img/bread.png" alt="bread" />
-            <p class="mb-3 font-semibold">Zelco Suji Elaichi Rusk</p>
-            <hr />
-            <div class="mt-2 flex items-center justify-between">
-              <div>
-                <span class="mr-2 text-gray-400 line-through">$20.00</span>
-                <span class="text-lg font-semibold">$15.00</span>
-              </div>
-              <img src="/img/star.svg" alt="stars" />
-            </div>
-          </div>
-        </div>
-        <div class="mt-32 flex justify-center">
-          <button
-            class="mt-12 flex min-h-[5rem] max-w-[13.75rem] items-center rounded-2xl bg-primary px-12 py-7 font-bold text-white"
+          <div
+            class="mt-10 grid grid-cols-4 grid-rows-2 justify-items-center gap-5"
           >
-            Load More
-            <img class="ml-2.5" src="/img/aerrow.svg" alt="aerrow" />
-          </button>
+            <div class="bg-gray-50 px-8 pb-5 pt-8">
+              <button
+                class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
+              >
+                Vegetable
+              </button>
+              <img src="/img/broccoli.png" alt="broccoli" />
+              <p class="mb-3 font-semibold">Calabrese Broccoli</p>
+              <hr />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <span class="mr-2 text-gray-400 line-through">$20.00</span>
+                  <span class="text-lg font-semibold">$13.00</span>
+                </div>
+                <img src="/img/star.svg" alt="stars" />
+              </div>
+            </div>
+
+            <div class="flex flex-col bg-gray-50 p-8 pb-5">
+              <div class="space-x-4">
+                <span
+                  class="rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
+                >
+                  Fresh
+                </span>
+              </div>
+
+              <div class="h-[325px] overflow-hidden">
+                <img src="/img/banana.png" srcset="" alt="big bananas" />
+              </div>
+
+              <p class="font-semibold">Fresh Banana Fruites</p>
+              <hr />
+              <div class="flex items-center justify-between">
+                <div class="space-x-2">
+                  <del class="text-gray-400 line-through">$20.00</del>
+                  <span class="text-lg font-semibold">$14.00</span>
+                </div>
+                <img src="/img/star.svg" alt="stars" />
+              </div>
+            </div>
+
+            <div class="bg-gray-50 px-8 pb-5 pt-8">
+              <button
+                class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
+              >
+                Millets
+              </button>
+              <img src="/img/millets.png" alt="white nuts" />
+              <p class="mb-3 font-semibold">White Nuts</p>
+              <hr />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <span class="mr-2 text-gray-400 line-through">$20.00</span>
+                  <span class="text-lg font-semibold">$15.00</span>
+                </div>
+                <img src="/img/star.svg" alt="stars" />
+              </div>
+            </div>
+            <div class="bg-gray-50 px-8 pb-5 pt-8">
+              <button
+                class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
+              >
+                Vegetable
+              </button>
+              <img src="/img/tomato.png" alt="tomato" />
+              <p class="mb-3 font-semibold">Vegan Red Tomato</p>
+              <hr />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <span class="mr-2 text-gray-400 line-through">$20.00</span>
+                  <span class="text-lg font-semibold">$17.00</span>
+                </div>
+                <img src="/img/star.svg" alt="stars" />
+              </div>
+            </div>
+            <div class="bg-gray-50 px-8 pb-5 pt-8">
+              <button
+                class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
+              >
+                Health
+              </button>
+              <img src="/img/mung.png" alt="mung bean" />
+              <p class="mb-3 font-semibold">Mung Bean</p>
+              <hr />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <span class="mr-2 text-gray-400 line-through">$20.00</span>
+                  <span class="text-lg font-semibold">$11.00</span>
+                </div>
+                <img src="/img/star.svg" alt="stars" />
+              </div>
+            </div>
+            <div class="bg-gray-50 px-8 pb-5 pt-8">
+              <button
+                class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
+              >
+                Nuts
+              </button>
+              <img src="/img/nuts.png" alt="nuts" />
+              <p class="mb-3 font-semibold">Brown Hazelnut</p>
+              <hr />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <span class="mr-2 text-gray-400 line-through">$20.00</span>
+                  <span class="text-lg font-semibold">$12.00</span>
+                </div>
+                <img src="/img/star.svg" alt="stars" />
+              </div>
+            </div>
+            <div class="bg-gray-50 px-8 pb-5 pt-8">
+              <button
+                class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
+              >
+                Fresh
+              </button>
+              <img src="/img/eggs.png" alt="eggs" />
+              <p class="mb-3 font-semibold">Eggs</p>
+              <hr />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <span class="mr-2 text-gray-400 line-through">$20.00</span>
+                  <span class="text-lg font-semibold">$17.00</span>
+                </div>
+                <img src="/img/star.svg" alt="stars" />
+              </div>
+            </div>
+            <div class="bg-gray-50 px-8 pb-5 pt-8">
+              <button
+                class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
+              >
+                Fresh
+              </button>
+              <img src="/img/bread.png" alt="bread" />
+              <p class="mb-3 font-semibold">Zelco Suji Elaichi Rusk</p>
+              <hr />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <span class="mr-2 text-gray-400 line-through">$20.00</span>
+                  <span class="text-lg font-semibold">$15.00</span>
+                </div>
+                <img src="/img/star.svg" alt="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="mt-32 flex justify-center">
+            <button
+              class="flex items-center rounded-2xl bg-primary px-12 py-7 text-xl font-bold text-white"
+            >
+              Load More
+              <img class="ml-2.5" src="/img/aerrow.svg" alt="aerrow" />
+            </button>
+          </div>
         </div>
       </section>
-      <section
-        class="min-h-[79rem] bg-gray-50 bg-cinnamon-img pt-40 font-roboto"
-      >
+      <section class="min-h-[79rem] bg-gray-50 bg-cinnamon-img pt-40">
         <div class="flex justify-center">
           <div class="text-center">
             <div>
@@ -350,17 +363,17 @@
             class="min-h-[13rem] min-w-[13rem] rounded-full border-4 border-green p-2"
           >
             <div
-              class="flex min-h-[13rem] min-w-[13rem] flex-col items-center justify-center rounded-full bg-gray-100 font-roboto"
+              class="flex min-h-[13rem] min-w-[13rem] flex-col items-center justify-center rounded-full bg-gray-100"
             >
               <span class="text-5xl font-extrabold">100%</span>
               <p class="font-sans text-lg font-semibold">Organic</p>
             </div>
           </div>
           <div
-            class="min-h-[13rem] min-w-[13rem] rounded-full border-4 border-green p-2"
+            class="flex items-center justify-center rounded-full border-4 border-green p-2"
           >
             <div
-              class="flex min-h-[13rem] min-w-[13rem] flex-col items-center justify-center rounded-full bg-gray-100 font-roboto"
+              class="flex h-[13rem] w-[13rem] flex-col items-center justify-center rounded-full bg-gray-100"
             >
               <span class="text-5xl font-extrabold">285</span>
               <p class="font-sans text-lg font-semibold">Active Product</p>
@@ -370,7 +383,7 @@
             class="min-h-[13rem] min-w-[13rem] rounded-full border-4 border-green p-2"
           >
             <div
-              class="flex min-h-[13rem] min-w-[13rem] flex-col items-center justify-center rounded-full bg-gray-100 font-roboto"
+              class="flex min-h-[13rem] min-w-[13rem] flex-col items-center justify-center rounded-full bg-gray-100"
             >
               <span class="text-5xl font-extrabold">350+</span>
               <p class="font-sans text-lg font-semibold">Organic Orchads</p>
@@ -380,7 +393,7 @@
             class="min-h-[13rem] min-w-[13rem] rounded-full border-4 border-green p-2"
           >
             <div
-              class="flex min-h-[13rem] min-w-[13rem] flex-col items-center justify-center rounded-full bg-gray-100 font-roboto"
+              class="flex min-h-[13rem] min-w-[13rem] flex-col items-center justify-center rounded-full bg-gray-100"
             >
               <span class="text-5xl font-extrabold">25+</span>
               <p class="font-sans text-lg font-semibold">Years of Farming</p>
@@ -388,8 +401,8 @@
           </div>
         </div>
       </section>
-      <section class="bg-primary py-52 font-roboto">
-        <div class="mx-64">
+      <section class="bg-primary py-52">
+        <div class="container">
           <div class="flex justify-between">
             <div class="">
               <span class="font-yellowtail text-4xl text-green">Offer</span>
@@ -398,15 +411,16 @@
               </h3>
             </div>
             <button
-              class="mt-5 inline-flex min-h-[3rem] items-center rounded-2xl bg-buton px-10 py-3 text-xl font-bold"
+              class="mt-5 inline-flex items-center rounded-2xl bg-buton px-10 py-3 text-xl font-bold"
             >
               View All Product
               <img class="ml-2.5" src="/img/aerrow.svg" alt="aerrow" />
             </button>
           </div>
-          <div class="mt-12 flex gap-5">
+
+          <div class="mt-12 flex justify-between gap-x-4">
             <div
-              class="min-h-[18rem] min-w-[20rem] max-w-xs rounded-3xl bg-gray-50 bg-center px-8 pb-5 pt-8"
+              class="min-h-[18rem] w-full min-w-[20rem] rounded-3xl bg-gray-50 bg-center px-8 pb-5 pt-8"
             >
               <button
                 class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
@@ -425,7 +439,7 @@
               </div>
             </div>
             <div
-              class="min-h-[18rem] min-w-[20rem] max-w-xs rounded-3xl bg-gray-50 px-8 pb-5 pt-8"
+              class="min-h-[18rem] w-full min-w-[20rem] rounded-3xl bg-gray-50 px-8 pb-5 pt-8"
             >
               <button
                 class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
@@ -444,7 +458,7 @@
               </div>
             </div>
             <div
-              class="min-h-[18rem] min-w-[20rem] max-w-xs rounded-3xl bg-gray-50 px-8 pb-5 pt-8"
+              class="min-h-[18rem] w-full min-w-[20rem] rounded-3xl bg-gray-50 px-8 pb-5 pt-8"
             >
               <button
                 class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
@@ -463,7 +477,7 @@
               </div>
             </div>
             <div
-              class="min-h-[18rem] min-w-[20rem] max-w-xs rounded-3xl bg-gray-50 px-8 pb-5 pt-8"
+              class="min-h-[18rem] w-full min-w-[20rem] rounded-3xl bg-gray-50 px-8 pb-5 pt-8"
             >
               <button
                 class="inline-flex max-w-[13.75rem] items-center rounded-lg bg-primary px-3 py-1 font-sans font-semibold text-white"
@@ -484,14 +498,13 @@
           </div>
         </div>
       </section>
-      <section class="font-roboto">
+      <section class="">
         <div class="flex">
           <div class="max-h-[56]">
             <img src="/img/pole.png" alt="field" />
           </div>
-          <div
-            class="absolute left-[55rem] my-24 rounded-3xl bg-white px-24 py-20"
-          >
+
+          <div class="my-24 -ml-16 max-w-3xl rounded-3xl bg-white px-24 py-20">
             <span class="font-yellowtail text-4xl text-green"
               >Eco Friendly</span
             >
@@ -531,7 +544,7 @@
       <section class="bg-teal-50 py-36">
         <div class="flex gap-10">
           <div class="min-h-[36.5rem] min-w-[36.5rem] bg-jucie-img">
-            <div class="absolute ">Organic Jucie</div>
+            <div class="absolute">Organic Jucie</div>
           </div>
           <div class="min-h-[36.5rem] min-w-[36.5rem] bg-food-img">
             <div class="absolute">Organic Jucie</div>
