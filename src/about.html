@@ -1,79 +1,802 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="/dist/output.css">
-</head>
-
-<body class="text-primary">
-    <header class="font-roboto">
-        <div class="py-16 container gap-x-16 mx-auto flex justify-between">
-            <div class="flex gap-x-2 items-center">
-                <img src="/img/logo.svg" alt="logo">
-                <span class="font-bold text-4xl">Organick</span>
-            </div>
-            <nav class="flex items-center">
-                <ul class="flex gap-5 text-xl font-bold">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <select name="" id="">
-                            <option value="">Pages</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
-                    </li>
-                    <li>
-                        <a href="#">Shop</a>
-                    </li>
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="flex gap-4 flex-grow">
-                <div class="relative flex flex-grow">
-                    <input
-                        class="w-full bg-zinc-50 pr-20 pl-8 text-lg border-0 ring-green outline-none focus:ring focus:outline-none rounded-full"
-                        type="text">
-                        <button class="absolute bg-green rounded-full h-14 w-14 inline-flex text-white items-center justify-center right-1 top-1/2 -translate-y-1/2">
-                   LP</button>
-                </div>
-                <div class="flex p-1 pr-4 gap-3 items-center border rounded-full">
-                    <img class="inline-flex" src="/img/cart.svg" alt="cart">
-                    <span class="font-semibold">Cart(0)</span>
-                </div>
-            </div>
+  <body class="text-sans bg-white text-lg text-primary">
+    <header class="py-16">
+      <div class="container flex items-center justify-between gap-x-20">
+        <div class="flex flex-grow items-center justify-between gap-x-2">
+          <a
+            href="#"
+            class="inline-flex items-center gap-x-2 font-roboto text-4xl font-bold text-primary"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 39 56"
+              width="39"
+              height="56"
+              class="text-accent inline-block h-12 w-full"
+            >
+              <path
+                stroke="#7EB693"
+                stroke-miterlimit="10"
+                stroke-width="2"
+                d="M2 42h35M6 49h27M19 2v14m0-1v26M30 5 19 16m15-7L19 24m18-8L19 33m19-10L19 42m19-10L27 42M1 32l10 10M9 5l10 11M4 9l15 15M2 15l17 18M1 22l18 19m0 14C9 55 1 46 1 36V20C1 10 9 1 19 1s19 9 19 19v16c0 10-9 19-19 19Z"
+              />
+            </svg>
+            <span>Organick</span>
+          </a>
+          <nav class="font-roboto text-xl font-bold">
+            <ul class="flex gap-x-10">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </nav>
         </div>
-    </header>
-    <main>
-        <section class="bg-hero-img min-h-[56rem] bg-[#E3F1E9] py-[15.5rem]">
-            <div class="container px-64 flex justify-start">
-                <div class="font-roboto w-[33rem]">
-                    <p class="font-yellowtail text-4xl text-hero-green">100% Natural Food</p>
-                    <h1 class="font-bold text-7xl mt-2 mb-6">Choose the best
-                        healthier way<br>
-                        of life</h1>
-                    <div
-                        class="flex justify-center items-center gap-3 bg-buton max-w-[13.75rem] min-h-[5rem] rounded-2xl">
-                        <p class="font-bold">Explore Now</p>
-                        <img src="/img/aerrow.svg" alt="aerrow">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
 
+        <div class="flex flex-grow items-center justify-between gap-x-5">
+          <div class="relative flex min-h-[60px] flex-grow">
+            <input
+              class="ring-accent w-full rounded-full border-0 bg-neutral-50 pl-8 pr-20 text-lg outline-none ring-green focus:outline-none focus:ring"
+            />
+
+            <button
+              type="button"
+              class="bg-accent absolute right-1 top-1/2 inline-flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-green p-3 text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 22 21"
+                class="inline-flex h-5 w-5"
+              >
+                <path
+                  fill="currentColor"
+                  d="m21.47 18.892-4.761-4.76A8.794 8.794 0 0 0 18.47 8.84C18.47 3.966 14.505 0 9.63 0 4.757 0 .791 3.966.791 8.84c0 4.875 3.966 8.84 8.84 8.84a8.794 8.794 0 0 0 5.291-1.762l4.761 4.76a1.265 1.265 0 0 0 1.786-1.786ZM3.316 8.84a6.314 6.314 0 1 1 6.314 6.315A6.322 6.322 0 0 1 3.317 8.84Z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <button
+            class="flex items-center gap-3 rounded-full border p-1 pr-4 font-roboto font-semibold"
+          >
+            <div class="flex rounded-full bg-primary p-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 27 24"
+                class="inline-flex h-5 w-5 text-white"
+              >
+                <path
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M11.569 23a1.222 1.222 0 1 0 0-2.444 1.222 1.222 0 0 0 0 2.444Zm8.556 0a1.222 1.222 0 1 0 0-2.444 1.222 1.222 0 0 0 0 2.444Z"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1.791 1h3.782l2.836 16.073h15.128"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m7.902 13.184 15.247.107a.473.473 0 0 0 .464-.38l1.702-8.51a.471.471 0 0 0-.464-.565H6.358"
+                />
+              </svg>
+            </div>
+            <span>Cart (0)</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero" class="relative overflow-hidden bg-[#F1EFF0]">
+      <img
+        role="presentation"
+        src="./images/bg-hero.png"
+        srcset="/img/bg-hero@2x.png 2x, /img/bg-hero.png"
+        class="pointer-events-none absolute left-1/2 top-1/2 block -translate-x-1/2 -translate-y-1/2 select-none"
+      />
+      <div
+        class="container relative z-10 flex min-h-[450px] items-center justify-center"
+      >
+        <h2 class="font-roboto text-6xl font-black">About Us</h2>
+      </div>
+    </section>
+
+    <main>
+      <section id="about" class="py-48">
+        <div class="container grid grid-cols-2 gap-x-10">
+          <div class="flex items-center justify-center">
+            <img
+              class="w-full object-fill object-center"
+              src="/images/plate.png"
+              srcset="/img/plate.png 1x, /img/plate.png 2x"
+            />
+          </div>
+
+          <div class="">
+            <p class="font-yellowtail text-4xl text-green">About Us</p>
+            <h2
+              class="mt-2 w-2/3 font-roboto text-5xl font-extrabold leading-tight [text-wrap:balance]"
+            >
+              We do Creative Things for Success
+            </h2>
+            <div class="mt-4 space-y-3 pr-10 text-lg text-p">
+              <p>
+                Simply dummy text of the printing and typesetting industry.
+                Lorem had ceased to been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley.
+              </p>
+              <p>
+                Simply dummy text of the printing and typesetting industry.
+                Lorem had ceased to been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley.
+              </p>
+            </div>
+
+            <div
+              class="mt-10 grid grid-cols-2 font-roboto text-2xl font-medium text-primary"
+            >
+              <div class="flex items-center space-x-4">
+                <img
+                  width="52"
+                  height="48"
+                  src="/img/tractor.png"
+                  srcset="/img/tractor.png 1x, /img/tractor@2x.png 2x"
+                />
+                <span class="">Modern Agriculture Equipment </span>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <img
+                  width="52"
+                  height="48"
+                  src="/img/factory.png"
+                  srcset="/img/factory.png 1x, /img/factory@2x.png 2x"
+                />
+                <span>Modern Agriculture Equipment </span>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="mt-10 inline-flex items-center justify-center rounded-xl bg-primary px-8 py-5 text-white"
+            >
+              Expore More
+              <svg
+                width="20"
+                height="19"
+                viewBox="0 0 20 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ml-2 block"
+              >
+                <circle cx="9.61865" cy="9.5" r="9.5" fill="#335B6B" />
+                <path
+                  d="M9.59506 6.12891L12.9896 9.19342L9.59506 12.2579M12.5181 9.19342H5.63477"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-us" class="bg-[#F9F8F8] py-48">
+        <div class="container">
+          <div class="flex justify-center">
+            <div id="content" class="w-1/2 pr-16">
+                <p class="font-yellowtail text-4xl text-green">
+                  Why Choose us?
+                </p>
+                <h2 class="mt-2 pr-20 font-roboto text-5xl font-extrabold">
+                  We do not buy from the open market & traders.
+                </h2>
+                <p class="mt-6 text-lg text-p">
+                  Simply dummy text of the printing and typesetting industry.
+                  Lorem had ceased to been the industry's standard the 1500s,
+                  when an unknown
+                </p>
+                <div id="cards" class="mt-9 w-3/4">
+                  <div id="card" class="flex flex-col">
+                    <div
+                      class="inline-flex w-2/3 items-center gap-2 rounded-full bg-[#ECECEC] py-7 pl-7"
+                    >
+                      <svg
+                        width="19"
+                        height="19"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="9.5" cy="9.5" r="9.5" fill="#7EB693" />
+                        <circle cx="9.5" cy="9.5" r="5.5" fill="#ECECEC" />
+                      </svg>
+
+                      <span class="font-roboto text-xl font-medium"
+                        >100% Natural Product</span
+                      >
+                    </div>
+
+                    <p class="pl-14 mt-3 text-lg text-p">
+                      Simply dummy text of the printing and typesetting
+                      industry Lorem Ipsum
+                    </p>
+
+                  </div>
+
+                  <div id="card" class="mt-6 flex flex-col">
+                    <div
+                      class="inline-flex w-2/3 items-center gap-2 rounded-full bg-[#ECECEC] py-7 pl-7"
+                    >
+                      <svg
+                        width="19"
+                        height="19"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="9.5" cy="9.5" r="9.5" fill="#7EB693" />
+                        <circle cx="9.5" cy="9.5" r="5.5" fill="#ECECEC" />
+                      </svg>
+
+                      <span class="font-roboto text-xl font-medium"
+                        >Increases resistance</span
+                      >
+                    </div>
+                    <div class="pl-14">
+                      <p class="mt-3 text-lg text-p">
+                        Filling, and temptingly healthy, our Biona Organic
+                        Granola with Wild Berries is just the thing
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+
+            <div>
+              <img
+                src="/img/green.png"
+                srcset="/img/green.png 1x, /img/green@2x.png 2x"
+                alt="green fruits"
+                class="rounded-3xl"
+              />
+            </div>
+          </div>
+          <div class="mx-36 mt-24 grid grid-cols-4 grid-rows-1 gap-7">
+            <div
+              id="card"
+              class="flex flex-col items-center rounded-3xl bg-white px-10 py-12"
+            >
+              <div class="h-24 w-24 rounded-3xl bg-[#F9F8F8] p-7">
+                <img
+                  src="/img/Return.png"
+                  srcset="/img/Return.png, /img/Return@2x.png"
+                  alt="return"
+                />
+              </div>
+              <div class="mt-4 text-center">
+                <span class="font-roboto text-2xl font-extrabold"
+                  >Return Policy</span
+                >
+                <p class="mt-3 text-lg text-p">
+                  Simply dummy text of the printintypesetting industry.
+                </p>
+              </div>
+            </div>
+            <div
+              id="card"
+              class="flex flex-col items-center rounded-3xl bg-white px-10 py-12"
+            >
+              <div class="h-24 w-24 rounded-3xl bg-[#F9F8F8] p-7">
+                <img
+                  src="/img/Natural Food.png"
+                  srcset="/img/Natural Food.png, /img/Natural Food@2x.png"
+                  alt="return"
+                />
+              </div>
+              <div class="mt-4 text-center">
+                <span class="font-roboto text-2xl font-extrabold"
+                  >100% Fresh</span
+                >
+                <p class="mt-3 text-lg text-p">
+                  Simply dummy text of the printintypesetting industry.
+                </p>
+              </div>
+            </div>
+            <div
+              id="card"
+              class="flex flex-col items-center rounded-3xl bg-white px-10 py-12"
+            >
+              <div class="h-24 w-24 rounded-3xl bg-[#F9F8F8] p-7">
+                <img
+                  src="/img/Phone Time.png"
+                  srcset="/img/Phone Thime.png, /img/Phone Thime@2x.png"
+                  alt="return"
+                />
+              </div>
+              <div class="mt-4 text-center">
+                <span class="font-roboto text-2xl font-extrabold"
+                  >Support 24/7</span
+                >
+                <p class="mt-3 text-lg text-p">
+                  Simply dummy text of the printintypesetting industry.
+                </p>
+              </div>
+            </div>
+            <div
+              id="card"
+              class="flex flex-col items-center rounded-3xl bg-white px-10 py-12"
+            >
+              <div class="h-24 w-24 rounded-3xl bg-[#F9F8F8] p-7">
+                <img
+                  src="/img/Card Security.png"
+                  srcset="/img/Card Security.png, /img/Card Security@2x.png"
+                  alt="return"
+                />
+              </div>
+              <div class="mt-4 text-center">
+                <span class="font-roboto text-2xl font-extrabold"
+                  >Secured Payment
+                </span>
+                <p class="mt-3 text-lg text-p">
+                  Simply dummy text of the printintypesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="pb-52 pt-44">
+        <div class="container">
+          <div class="px-72 text-center">
+            <p class="font-yellowtail text-4xl text-green">Team</p>
+            <h2 class="mt-2 font-roboto text-5xl font-extrabold">
+              Our Organic Experts
+            </h2>
+            <p class="mt-4 text-lg text-p">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley.
+            </p>
+          </div>
+          <div class="mt-10 grid grid-cols-3 grid-rows-1 gap-7">
+            <div class="rounded-3xl bg-[#F9F8F8]">
+              <div class="">
+                <img
+                  src="/img/churka.png"
+                  srcset="/img/churka.png, /img/churka@2x.png"
+                  alt="churka"
+                  class="rounded-t-3xl"
+                />
+              </div>
+              <div class="flex justify-between px-7 py-8">
+                <div class="flex flex-col">
+                  <span class="font-roboto text-2xl font-extrabold"
+                    >Giovani Bacardo</span
+                  >
+                  <span class="font-yellowtail text-2xl text-green"
+                    >Farmer</span
+                  >
+                </div>
+                <div class="flex items-end justify-end space-x-4">
+                  <div>
+                    <svg
+                      width="23"
+                      height="22"
+                      viewBox="0 0 23 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.3305 11.3775C22.3305 5.44001 17.3311 0.625732 11.1653 0.625732C4.99944 0.625732 0 5.44001 0 11.3775C0 16.7437 4.08229 21.1918 9.42068 21.9991V14.4863H6.58501V11.3775H9.42068V9.00872C9.42068 6.31455 11.088 4.82514 13.6381 4.82514C14.8598 4.82514 16.1378 5.03538 16.1378 5.03538V7.68155H14.7292C13.343 7.68155 12.9093 8.51001 12.9093 9.36151V11.3775H16.0057L15.5112 14.4863H12.9098V22.0001C18.2482 21.1932 22.3305 16.7452 22.3305 11.3775V11.3775Z"
+                        fill="#274C5B"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      width="25"
+                      height="20"
+                      viewBox="0 0 25 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.2561 3.01063C23.3586 3.40059 22.409 3.6575 21.4374 3.77325C22.4585 3.1753 23.2265 2.22535 23.5972 1.10157C22.6317 1.66611 21.5772 2.06221 20.4789 2.27292C20.0163 1.7882 19.4601 1.40258 18.8439 1.13952C18.2277 0.876461 17.5645 0.741446 16.8945 0.742684C14.182 0.742684 11.9868 2.90595 11.9868 5.57265C11.9849 5.94358 12.0274 6.3134 12.1134 6.67422C10.1683 6.58304 8.26364 6.08684 6.52129 5.21738C4.77894 4.34793 3.23726 3.12435 1.99489 1.62494C1.55903 2.35971 1.32853 3.19806 1.32746 4.05238C1.32746 5.72717 2.20124 7.20756 3.52064 8.07486C2.73894 8.05631 1.97325 7.84942 1.28858 7.47174V7.53155C1.28858 9.87426 2.98331 11.8232 5.22633 12.2668C4.80453 12.3793 4.36988 12.4362 3.93335 12.4363C3.62361 12.4368 3.31456 12.4068 3.01073 12.3466C3.63428 14.2656 5.44914 15.6613 7.59895 15.7011C5.85207 17.0474 3.70737 17.775 1.50192 17.7697C1.11045 17.7691 0.719339 17.7458 0.330566 17.6999C2.57417 19.1326 5.18219 19.8904 7.84418 19.8831C16.8841 19.8831 21.8227 12.521 21.8227 6.1359C21.8227 5.92655 21.8172 5.7172 21.8072 5.51284C22.7658 4.83099 23.5951 3.98365 24.2561 3.01063V3.01063Z"
+                        fill="#274C5B"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-3xl shadow-2xl">
+              <div class="">
+                <img
+                  src="/img/milf.png"
+                  srcset="/img/milf.png, /img/milf@2x.png"
+                  alt="milfa"
+                  class="rounded-t-3xl"
+                />
+              </div>
+              <div class="flex justify-between px-7 py-8">
+                <div class="flex flex-col">
+                  <span class="font-roboto text-2xl font-extrabold"
+                    >Marianne Loreno</span
+                  >
+                  <span class="font-yellowtail text-2xl text-green"
+                    >Designer</span
+                  >
+                </div>
+                <div class="flex items-end justify-end space-x-4">
+                  <div>
+                    <svg
+                      width="23"
+                      height="22"
+                      viewBox="0 0 23 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.2308 2.28838C17.4636 2.29192 18.6449 2.76508 19.5166 3.60451C20.3883 4.44395 20.8797 5.58145 20.8834 6.76858V15.728C20.8797 16.9152 20.3883 18.0527 19.5166 18.8921C18.6449 19.7315 17.4636 20.2047 16.2308 20.2082H6.9268C5.69401 20.2047 4.51276 19.7315 3.64104 18.8921C2.76932 18.0527 2.27796 16.9152 2.27428 15.728V6.76858C2.27796 5.58145 2.76932 4.44395 3.64104 3.60451C4.51276 2.76508 5.69401 2.29192 6.9268 2.28838H16.2308V2.28838ZM16.2308 0.496582H6.9268C3.34445 0.496582 0.413574 3.31891 0.413574 6.76858V15.728C0.413574 19.1777 3.34445 22 6.9268 22H16.2308C19.8132 22 22.7441 19.1777 22.7441 15.728V6.76858C22.7441 3.31891 19.8132 0.496582 16.2308 0.496582V0.496582Z"
+                        fill="#274C5B"
+                      />
+                      <path
+                        d="M17.6264 6.76923C17.3504 6.76923 17.0805 6.69041 16.851 6.54273C16.6215 6.39506 16.4426 6.18516 16.337 5.93958C16.2313 5.694 16.2037 5.42377 16.2576 5.16307C16.3114 4.90237 16.4443 4.66289 16.6395 4.47494C16.8347 4.28698 17.0834 4.15898 17.3541 4.10712C17.6248 4.05527 17.9055 4.08188 18.1605 4.1836C18.4155 4.28532 18.6335 4.45758 18.7868 4.6786C18.9402 4.89961 19.0221 5.15945 19.0221 5.42526C19.0224 5.60186 18.9866 5.7768 18.9166 5.94003C18.8466 6.10326 18.7438 6.25156 18.6142 6.37644C18.4845 6.50131 18.3305 6.60029 18.161 6.6677C17.9915 6.73511 17.8098 6.76961 17.6264 6.76923V6.76923ZM11.5787 7.66489C12.3148 7.66489 13.0344 7.87509 13.6465 8.26891C14.2586 8.66274 14.7356 9.22249 15.0173 9.87739C15.299 10.5323 15.3727 11.2529 15.2291 11.9482C15.0855 12.6434 14.731 13.282 14.2105 13.7833C13.69 14.2845 13.0268 14.6259 12.3048 14.7642C11.5828 14.9024 10.8345 14.8315 10.1544 14.5602C9.47431 14.2889 8.89303 13.8296 8.48406 13.2402C8.07509 12.6508 7.8568 11.9578 7.8568 11.249C7.85786 10.2987 8.25033 9.38768 8.94809 8.71576C9.64586 8.04384 10.5919 7.6659 11.5787 7.66489V7.66489ZM11.5787 5.87309C10.4746 5.87309 9.39524 6.18838 8.47718 6.77909C7.55912 7.3698 6.84358 8.20939 6.42105 9.1917C5.99851 10.174 5.88796 11.2549 6.10336 12.2977C6.31877 13.3406 6.85047 14.2984 7.63121 15.0503C8.41195 15.8021 9.40668 16.3141 10.4896 16.5215C11.5725 16.729 12.695 16.6225 13.7151 16.2156C14.7352 15.8087 15.6071 15.1197 16.2205 14.2356C16.8339 13.3516 17.1613 12.3122 17.1613 11.249C17.1613 9.82319 16.5732 8.45582 15.5262 7.44765C14.4793 6.43948 13.0593 5.87309 11.5787 5.87309V5.87309Z"
+                        fill="#274C5B"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      width="23"
+                      height="22"
+                      viewBox="0 0 23 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.3305 11.3775C22.3305 5.44001 17.3311 0.625732 11.1653 0.625732C4.99944 0.625732 0 5.44001 0 11.3775C0 16.7437 4.08229 21.1918 9.42068 21.9991V14.4863H6.58501V11.3775H9.42068V9.00872C9.42068 6.31455 11.088 4.82514 13.6381 4.82514C14.8598 4.82514 16.1378 5.03538 16.1378 5.03538V7.68155H14.7292C13.343 7.68155 12.9093 8.51001 12.9093 9.36151V11.3775H16.0057L15.5112 14.4863H12.9098V22.0001C18.2482 21.1932 22.3305 16.7452 22.3305 11.3775V11.3775Z"
+                        fill="#274C5B"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      width="25"
+                      height="20"
+                      viewBox="0 0 25 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.2561 3.01063C23.3586 3.40059 22.409 3.6575 21.4374 3.77325C22.4585 3.1753 23.2265 2.22535 23.5972 1.10157C22.6317 1.66611 21.5772 2.06221 20.4789 2.27292C20.0163 1.7882 19.4601 1.40258 18.8439 1.13952C18.2277 0.876461 17.5645 0.741446 16.8945 0.742684C14.182 0.742684 11.9868 2.90595 11.9868 5.57265C11.9849 5.94358 12.0274 6.3134 12.1134 6.67422C10.1683 6.58304 8.26364 6.08684 6.52129 5.21738C4.77894 4.34793 3.23726 3.12435 1.99489 1.62494C1.55903 2.35971 1.32853 3.19806 1.32746 4.05238C1.32746 5.72717 2.20124 7.20756 3.52064 8.07486C2.73894 8.05631 1.97325 7.84942 1.28858 7.47174V7.53155C1.28858 9.87426 2.98331 11.8232 5.22633 12.2668C4.80453 12.3793 4.36988 12.4362 3.93335 12.4363C3.62361 12.4368 3.31456 12.4068 3.01073 12.3466C3.63428 14.2656 5.44914 15.6613 7.59895 15.7011C5.85207 17.0474 3.70737 17.775 1.50192 17.7697C1.11045 17.7691 0.719339 17.7458 0.330566 17.6999C2.57417 19.1326 5.18219 19.8904 7.84418 19.8831C16.8841 19.8831 21.8227 12.521 21.8227 6.1359C21.8227 5.92655 21.8172 5.7172 21.8072 5.51284C22.7658 4.83099 23.5951 3.98365 24.2561 3.01063V3.01063Z"
+                        fill="#274C5B"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-3xl bg-[#F9F8F8]">
+              <div class="">
+                <img
+                  src="/img/soska.png"
+                  srcset="/img/soska.png, /img/soska@2x.png"
+                  alt="churka"
+                  class="rounded-t-3xl"
+                />
+              </div>
+              <div class="flex justify-between px-7 py-8">
+                <div class="flex flex-col">
+                  <span class="font-roboto text-2xl font-extrabold"
+                    >Riga Pelore</span
+                  >
+                  <span class="font-yellowtail text-2xl text-green"
+                    >Farmer</span
+                  >
+                </div>
+                <div class="flex items-end justify-end space-x-4">
+                  <div>
+                    <svg
+                      width="23"
+                      height="22"
+                      viewBox="0 0 23 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.2308 2.28838C17.4636 2.29192 18.6449 2.76508 19.5166 3.60451C20.3883 4.44395 20.8797 5.58145 20.8834 6.76858V15.728C20.8797 16.9152 20.3883 18.0527 19.5166 18.8921C18.6449 19.7315 17.4636 20.2047 16.2308 20.2082H6.9268C5.69401 20.2047 4.51276 19.7315 3.64104 18.8921C2.76932 18.0527 2.27796 16.9152 2.27428 15.728V6.76858C2.27796 5.58145 2.76932 4.44395 3.64104 3.60451C4.51276 2.76508 5.69401 2.29192 6.9268 2.28838H16.2308V2.28838ZM16.2308 0.496582H6.9268C3.34445 0.496582 0.413574 3.31891 0.413574 6.76858V15.728C0.413574 19.1777 3.34445 22 6.9268 22H16.2308C19.8132 22 22.7441 19.1777 22.7441 15.728V6.76858C22.7441 3.31891 19.8132 0.496582 16.2308 0.496582V0.496582Z"
+                        fill="#274C5B"
+                      />
+                      <path
+                        d="M17.6264 6.76923C17.3504 6.76923 17.0805 6.69041 16.851 6.54273C16.6215 6.39506 16.4426 6.18516 16.337 5.93958C16.2313 5.694 16.2037 5.42377 16.2576 5.16307C16.3114 4.90237 16.4443 4.66289 16.6395 4.47494C16.8347 4.28698 17.0834 4.15898 17.3541 4.10712C17.6248 4.05527 17.9055 4.08188 18.1605 4.1836C18.4155 4.28532 18.6335 4.45758 18.7868 4.6786C18.9402 4.89961 19.0221 5.15945 19.0221 5.42526C19.0224 5.60186 18.9866 5.7768 18.9166 5.94003C18.8466 6.10326 18.7438 6.25156 18.6142 6.37644C18.4845 6.50131 18.3305 6.60029 18.161 6.6677C17.9915 6.73511 17.8098 6.76961 17.6264 6.76923V6.76923ZM11.5787 7.66489C12.3148 7.66489 13.0344 7.87509 13.6465 8.26891C14.2586 8.66274 14.7356 9.22249 15.0173 9.87739C15.299 10.5323 15.3727 11.2529 15.2291 11.9482C15.0855 12.6434 14.731 13.282 14.2105 13.7833C13.69 14.2845 13.0268 14.6259 12.3048 14.7642C11.5828 14.9024 10.8345 14.8315 10.1544 14.5602C9.47431 14.2889 8.89303 13.8296 8.48406 13.2402C8.07509 12.6508 7.8568 11.9578 7.8568 11.249C7.85786 10.2987 8.25033 9.38768 8.94809 8.71576C9.64586 8.04384 10.5919 7.6659 11.5787 7.66489V7.66489ZM11.5787 5.87309C10.4746 5.87309 9.39524 6.18838 8.47718 6.77909C7.55912 7.3698 6.84358 8.20939 6.42105 9.1917C5.99851 10.174 5.88796 11.2549 6.10336 12.2977C6.31877 13.3406 6.85047 14.2984 7.63121 15.0503C8.41195 15.8021 9.40668 16.3141 10.4896 16.5215C11.5725 16.729 12.695 16.6225 13.7151 16.2156C14.7352 15.8087 15.6071 15.1197 16.2205 14.2356C16.8339 13.3516 17.1613 12.3122 17.1613 11.249C17.1613 9.82319 16.5732 8.45582 15.5262 7.44765C14.4793 6.43948 13.0593 5.87309 11.5787 5.87309V5.87309Z"
+                        fill="#274C5B"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      width="23"
+                      height="22"
+                      viewBox="0 0 23 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.3305 11.3775C22.3305 5.44001 17.3311 0.625732 11.1653 0.625732C4.99944 0.625732 0 5.44001 0 11.3775C0 16.7437 4.08229 21.1918 9.42068 21.9991V14.4863H6.58501V11.3775H9.42068V9.00872C9.42068 6.31455 11.088 4.82514 13.6381 4.82514C14.8598 4.82514 16.1378 5.03538 16.1378 5.03538V7.68155H14.7292C13.343 7.68155 12.9093 8.51001 12.9093 9.36151V11.3775H16.0057L15.5112 14.4863H12.9098V22.0001C18.2482 21.1932 22.3305 16.7452 22.3305 11.3775V11.3775Z"
+                        fill="#274C5B"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      width="25"
+                      height="20"
+                      viewBox="0 0 25 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.2561 3.01063C23.3586 3.40059 22.409 3.6575 21.4374 3.77325C22.4585 3.1753 23.2265 2.22535 23.5972 1.10157C22.6317 1.66611 21.5772 2.06221 20.4789 2.27292C20.0163 1.7882 19.4601 1.40258 18.8439 1.13952C18.2277 0.876461 17.5645 0.741446 16.8945 0.742684C14.182 0.742684 11.9868 2.90595 11.9868 5.57265C11.9849 5.94358 12.0274 6.3134 12.1134 6.67422C10.1683 6.58304 8.26364 6.08684 6.52129 5.21738C4.77894 4.34793 3.23726 3.12435 1.99489 1.62494C1.55903 2.35971 1.32853 3.19806 1.32746 4.05238C1.32746 5.72717 2.20124 7.20756 3.52064 8.07486C2.73894 8.05631 1.97325 7.84942 1.28858 7.47174V7.53155C1.28858 9.87426 2.98331 11.8232 5.22633 12.2668C4.80453 12.3793 4.36988 12.4362 3.93335 12.4363C3.62361 12.4368 3.31456 12.4068 3.01073 12.3466C3.63428 14.2656 5.44914 15.6613 7.59895 15.7011C5.85207 17.0474 3.70737 17.775 1.50192 17.7697C1.11045 17.7691 0.719339 17.7458 0.330566 17.6999C2.57417 19.1326 5.18219 19.8904 7.84418 19.8831C16.8841 19.8831 21.8227 12.521 21.8227 6.1359C21.8227 5.92655 21.8172 5.7172 21.8072 5.51284C22.7658 4.83099 23.5951 3.98365 24.2561 3.01063V3.01063Z"
+                        fill="#274C5B"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="offers" class="bg-primary py-48 font-roboto">
+        <div class="container">
+          <div class="space-y-4 text-center">
+            <p class="font-yellowtail text-4xl text-green">About Us</p>
+            <h2 class="font-roboto text-5xl font-extrabold text-white">
+              What We Offer for You
+            </h2>
+          </div>
+          <div class="mt-6 grid grid-cols-4">
+            <div class="text-center">
+              <div class="mb-5 h-[19.5rem] w-[19.5rem] rounded-3xl bg-white">
+                <img
+                  src="/img/kurkuma.png"
+                  srcset="/img/kurkuma.png, /img/kurkuma@2x.png"
+                  alt="kurkema"
+                  class="rounded-3xl"
+                />
+              </div>
+              <span class="text-2xl font-medium text-white">Spicy</span>
+            </div>
+            <div class="text-center">
+              <div class="mb-5 h-[19.5rem] w-[19.5rem] rounded-3xl bg-white">
+                <img
+                  src="/img/feest.png"
+                  srcset="/img/feest.png, /img/feest@2x.png"
+                  alt="feeds"
+                  class="rounded-3xl"
+                />
+              </div>
+              <span class="text-2xl font-medium text-white">Nuts & Feesd</span>
+            </div>
+            <div class="text-center">
+              <div class="mb-5 h-[19.5rem] w-[19.5rem] rounded-3xl bg-white">
+                <img
+                  src="/img/grenad.png"
+                  srcset="/img/grenad.png, /img/grenad@2x.png"
+                  alt="grenad"
+                  class="rounded-3xl"
+                />
+              </div>
+              <span class="text-2xl font-medium text-white">Fruits</span>
+            </div>
+            <div class="text-center">
+              <div class="mb-5 h-[19.5rem] w-[19.5rem] rounded-3xl bg-white">
+                <img
+                  src="/img/ginger.png"
+                  srcset="/img/ginger.png, /img/ginger@2x.png"
+                  alt="kurkema"
+                  class="rounded-3xl"
+                />
+              </div>
+              <span class="text-2xl font-medium text-white">Vegetable</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="py-32 font-roboto">
+        <div
+          class="container flex h-[323px] justify-between rounded-3xl bg-oranges px-20 py-28"
+        >
+          <div class="w-1/3 pr-16">
+            <p class="text-5xl font-extrabold leading-tight text-white">
+              Subscribe to our Newsletter
+            </p>
+          </div>
+          <form class="flex gap-2 py-4">
+            <input
+              class="w-full rounded-2xl border-0 bg-zinc-50 pl-8 pr-20 text-lg outline-none ring-primary focus:outline-none focus:ring"
+              type="text"
+              placeholder="Your Email Address"
+            />
+            <button
+              class="flex items-center rounded-2xl bg-primary px-12 py-7 text-xl font-bold text-white"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-28 font-roboto">
+      <div class="container mb-28 flex justify-center gap-12">
+        <div class="text-end">
+          <div>
+            <p class="mb-8 text-3xl font-bold">Contact Us</p>
+          </div>
+          <ul class="font-sans text-lg text-p">
+            <li class="mb-8">
+              <p class="font-bold">Email</p>
+              <p>needhelp@Organia.com</p>
+            </li>
+            <li class="mb-8">
+              <p class="font-bold">Phone</p>
+              <p>666 888 888</p>
+            </li>
+            <li class="mb-8">
+              <p class="font-bold">Address</p>
+              <p>88 road, borklyn street, USA</p>
+            </li>
+          </ul>
+        </div>
+        <div class="border"></div>
+        <div class="flex flex-col items-center">
+          <div class="mb-7 flex items-center gap-x-2">
+            <img src="/img/logo.svg" alt="logo" />
+            <span class="text-4xl font-bold">Organick</span>
+          </div>
+          <p class="mb-12 w-[33rem] text-center font-sans text-lg text-p">
+            Simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum simply dummy text of the printing
+          </p>
+          <div class="flex gap-4">
+            <div class="rounded-full bg-teal-50 p-5">
+              <a href="/">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.6585 2.26307C14.7231 2.26613 15.7431 2.67471 16.4958 3.39958C17.2486 4.12445 17.6729 5.1067 17.6761 6.13181V13.8685C17.6729 14.8936 17.2486 15.8758 16.4958 16.6007C15.7431 17.3256 14.7231 17.7342 13.6585 17.7372H5.6243C4.55976 17.7342 3.53973 17.3256 2.78698 16.6007C2.03423 15.8758 1.60994 14.8936 1.60676 13.8685V6.13181C1.60994 5.1067 2.03423 4.12445 2.78698 3.39958C3.53973 2.67471 4.55976 2.26613 5.6243 2.26307H13.6585ZM13.6585 0.71582H5.6243C2.53087 0.71582 0 3.15296 0 6.13181V13.8685C0 16.8473 2.53087 19.2845 5.6243 19.2845H13.6585C16.752 19.2845 19.2828 16.8473 19.2828 13.8685V6.13181C19.2828 3.15296 16.752 0.71582 13.6585 0.71582Z"
+                    fill="#274C5B"
+                  />
+                  <path
+                    d="M14.8638 6.1326C14.6254 6.1326 14.3924 6.06454 14.1942 5.93702C13.996 5.8095 13.8416 5.62824 13.7504 5.41618C13.6591 5.20412 13.6353 4.97078 13.6818 4.74565C13.7283 4.52053 13.8431 4.31374 14.0116 4.15144C14.1802 3.98913 14.3949 3.8786 14.6287 3.83382C14.8625 3.78904 15.1048 3.81203 15.325 3.89986C15.5452 3.9877 15.7334 4.13645 15.8659 4.3273C15.9983 4.51815 16.069 4.74253 16.069 4.97206C16.0693 5.12456 16.0384 5.27562 15.9779 5.41657C15.9175 5.55752 15.8287 5.68559 15.7167 5.79342C15.6048 5.90125 15.4718 5.98673 15.3254 6.04493C15.179 6.10314 15.0222 6.13293 14.8638 6.1326ZM9.64151 6.90602C10.2772 6.90602 10.8986 7.08754 11.4271 7.42761C11.9556 7.76768 12.3676 8.25104 12.6108 8.81656C12.8541 9.38209 12.9177 10.0044 12.7937 10.6047C12.6697 11.2051 12.3636 11.7565 11.9141 12.1894C11.4646 12.6222 10.892 12.917 10.2685 13.0364C9.64507 13.1558 8.99886 13.0945 8.41158 12.8603C7.82431 12.626 7.32236 12.2293 6.96921 11.7204C6.61606 11.2114 6.42756 10.6131 6.42756 10.0009C6.42847 9.18038 6.76738 8.39369 7.36991 7.81347C7.97245 7.23325 8.7894 6.9069 9.64151 6.90602ZM9.64151 5.35877C8.68806 5.35877 7.75603 5.63103 6.96327 6.14112C6.17051 6.65121 5.55263 7.37621 5.18776 8.22446C4.82289 9.0727 4.72742 10.0061 4.91343 10.9066C5.09944 11.8071 5.55857 12.6342 6.23275 13.2834C6.90694 13.9327 7.76591 14.3748 8.70104 14.5539C9.63616 14.733 10.6054 14.6411 11.4863 14.2897C12.3672 13.9384 13.1201 13.3434 13.6498 12.58C14.1795 11.8166 14.4622 10.9191 14.4622 10.0009C14.4622 8.76976 13.9543 7.58901 13.0503 6.71843C12.1462 5.84786 10.92 5.35877 9.64151 5.35877Z"
+                    fill="#274C5B"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="rounded-full bg-teal-50 p-5">
+              <a href="">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.2828 10.0001C19.2828 4.87304 14.9657 0.71582 9.64141 0.71582C4.31711 0.71582 0 4.87304 0 10.0001C0 14.634 3.52514 18.475 8.13494 19.1721V12.6847H5.68628V10.0001H8.13494V7.95469C8.13494 5.62822 9.5747 4.34209 11.7767 4.34209C12.8317 4.34209 13.9353 4.52364 13.9353 4.52364V6.80866H12.7189C11.5219 6.80866 11.1475 7.52405 11.1475 8.25933V10.0001H13.8212L13.3942 12.6847H11.1479V19.173C15.7577 18.4762 19.2828 14.6353 19.2828 10.0001Z"
+                    fill="#274C5B"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="rounded-full bg-teal-50 p-5">
+              <a href="/">
+                <svg
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.6602 2.67424C19.8852 3.01098 19.0652 3.23283 18.2261 3.33278C19.1079 2.81644 19.7711 1.99614 20.0912 1.02573C19.2575 1.51322 18.3469 1.85527 17.3984 2.03722C16.9991 1.61865 16.5187 1.28566 15.9866 1.0585C15.4546 0.831346 14.8818 0.714758 14.3033 0.715828C11.9609 0.715828 10.0654 2.58385 10.0654 4.8866C10.0637 5.2069 10.1004 5.52625 10.1747 5.83783C8.49507 5.75909 6.85036 5.33061 5.34581 4.57982C3.84126 3.82903 2.50999 2.77244 1.43717 1.47767C1.0608 2.11216 0.861758 2.8361 0.86084 3.57382C0.86084 5.02003 1.61537 6.29838 2.75469 7.04731C2.07967 7.03129 1.41849 6.85263 0.827268 6.5265V6.57815C0.827268 8.60112 2.2907 10.2841 4.22759 10.6671C3.86336 10.7642 3.48803 10.8134 3.11108 10.8135C2.84361 10.814 2.57674 10.788 2.31437 10.736C2.85283 12.3931 4.41999 13.5983 6.27639 13.6327C4.76793 14.7953 2.91593 15.4236 1.01149 15.419C0.673443 15.4185 0.335713 15.3984 0 15.3587C1.9374 16.5958 4.18947 17.2502 6.48815 17.244C14.2943 17.244 18.5589 10.8867 18.5589 5.37297C18.5589 5.1922 18.5541 5.01142 18.5455 4.83495C19.3733 4.24616 20.0893 3.51447 20.6602 2.67424Z"
+                    fill="#274C5B"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="rounded-full bg-teal-50 p-5">
+              <a href="/">
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.79664 0.71582C4.38662 0.71582 0 5.10048 0 10.5081C0 14.5168 2.41417 17.9616 5.86486 19.4785C5.83862 18.7965 5.86049 17.9747 6.03543 17.2315C6.22349 16.4359 7.295 11.8939 7.295 11.8939C7.295 11.8939 6.9801 11.2687 6.9801 10.3463C6.9801 8.89499 7.81982 7.81084 8.86946 7.81084C9.76165 7.81084 10.1903 8.47969 10.1903 9.27968C10.1903 10.1758 9.61732 11.5135 9.3243 12.7551C9.07938 13.7955 9.84475 14.6392 10.8725 14.6392C12.7269 14.6392 13.9777 12.2567 13.9777 9.43269C13.9777 7.28626 12.5301 5.6819 9.9016 5.6819C6.932 5.6819 5.07763 7.89827 5.07763 10.3726C5.07763 11.225 5.3313 11.8283 5.72491 12.2917C5.90422 12.5059 5.93046 12.5933 5.86486 12.8381C5.81675 13.0174 5.71179 13.4501 5.66368 13.625C5.59808 13.8742 5.3969 13.9616 5.17385 13.8698C3.80494 13.3102 3.16641 11.8152 3.16641 10.1278C3.16641 7.34746 5.51498 4.01197 10.1684 4.01197C13.9077 4.01197 16.37 6.71795 16.37 9.62066C16.37 13.4633 14.2314 16.331 11.0824 16.331C10.0241 16.331 9.03128 15.7583 8.69014 15.1113C8.69014 15.1113 8.12159 17.367 7.99913 17.8042C7.79357 18.5605 7.38684 19.3124 7.01509 19.9025C7.91686 20.1684 8.85208 20.3039 9.79226 20.3047C15.2023 20.3047 19.5889 15.9201 19.5889 10.5125C19.5889 5.10485 15.2067 0.71582 9.79664 0.71582Z"
+                    fill="#274C5B"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border"></div>
+        <div>
+          <p class="mb-6 text-3xl font-bold">Utility Pages</p>
+          <ul class="flex flex-col gap-6 font-sans text-lg text-p">
+            <li>
+              <a href="/">Style Guide</a>
+            </li>
+            <li>
+              <a href="/">404 Not Found</a>
+            </li>
+            <li>
+              <a href="/">Password Protected</a>
+            </li>
+            <li>
+              <a href="/">Licences</a>
+            </li>
+            <li>
+              <a href="/">Changelog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="flex items-center justify-center py-4">
+        <p class="font-sans text-lg text-p">
+          Copyright &copy; <span class="font-bold">Organick</span> | Designed by
+          <span class="font-bold">VictorFlow</span> Templates - Powered by
+          <span class="font-bold">Webflow</span>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

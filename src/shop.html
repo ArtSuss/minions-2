@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+
+  <body class="text-sans bg-white text-lg text-primary">
+    <header class="py-16">
+      <div class="container flex items-center justify-between gap-x-20">
+        <div class="flex flex-grow items-center justify-between gap-x-2">
+          <a
+            href="#"
+            class="inline-flex items-center gap-x-2 font-roboto text-4xl font-bold text-primary"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 39 56"
+              width="39"
+              height="56"
+              class="text-accent inline-block h-12 w-full"
+            >
+              <path
+                stroke="#7EB693"
+                stroke-miterlimit="10"
+                stroke-width="2"
+                d="M2 42h35M6 49h27M19 2v14m0-1v26M30 5 19 16m15-7L19 24m18-8L19 33m19-10L19 42m19-10L27 42M1 32l10 10M9 5l10 11M4 9l15 15M2 15l17 18M1 22l18 19m0 14C9 55 1 46 1 36V20C1 10 9 1 19 1s19 9 19 19v16c0 10-9 19-19 19Z"
+              />
+            </svg>
+            <span>Organick</span>
+          </a>
+          <nav class="font-roboto text-xl font-bold">
+            <ul class="flex gap-x-10">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex flex-grow items-center justify-between gap-x-5">
+          <div class="relative flex min-h-[60px] flex-grow">
+            <input
+              class="ring-accent w-full rounded-full border-0 bg-neutral-50 pl-8 pr-20 text-lg outline-none ring-green focus:outline-none focus:ring"
+            />
+
+            <button
+              type="button"
+              class="bg-accent absolute right-1 top-1/2 inline-flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-green p-3 text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 22 21"
+                class="inline-flex h-5 w-5"
+              >
+                <path
+                  fill="currentColor"
+                  d="m21.47 18.892-4.761-4.76A8.794 8.794 0 0 0 18.47 8.84C18.47 3.966 14.505 0 9.63 0 4.757 0 .791 3.966.791 8.84c0 4.875 3.966 8.84 8.84 8.84a8.794 8.794 0 0 0 5.291-1.762l4.761 4.76a1.265 1.265 0 0 0 1.786-1.786ZM3.316 8.84a6.314 6.314 0 1 1 6.314 6.315A6.322 6.322 0 0 1 3.317 8.84Z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <button
+            class="flex items-center gap-3 rounded-full border p-1 pr-4 font-roboto font-semibold"
+          >
+            <div class="flex rounded-full bg-primary p-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 27 24"
+                class="inline-flex h-5 w-5 text-white"
+              >
+                <path
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M11.569 23a1.222 1.222 0 1 0 0-2.444 1.222 1.222 0 0 0 0 2.444Zm8.556 0a1.222 1.222 0 1 0 0-2.444 1.222 1.222 0 0 0 0 2.444Z"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1.791 1h3.782l2.836 16.073h15.128"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m7.902 13.184 15.247.107a.473.473 0 0 0 .464-.38l1.702-8.51a.471.471 0 0 0-.464-.565H6.358"
+                />
+              </svg>
+            </div>
+            <span>Cart (0)</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero" class="relative overflow-hidden bg-[#F1EFF0]">
+      <img
+        role="presentation"
+        src="/img/bg-hero.png"
+        srcset="/img/bg-hero@2x.png 2x, /img/bg-hero.png"
+        class="pointer-events-none absolute left-1/2 top-1/2 block -translate-x-1/2 -translate-y-1/2 select-none"
+      />
+      <div
+        class="container relative z-10 flex min-h-[450px] items-center justify-center"
+      >
+        <h2 class="font-roboto text-6xl font-black">About Us</h2>
+      </div>
+    </section>
+  </body>
+</html>
